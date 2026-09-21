@@ -1,148 +1,69 @@
-# Apple Devices + iPhone 2G Restore Guide
+# Apple Devices Archive
 
-GitHub Pages + GitHub Codespaces-ready Apple Devices web app example.
+A GitHub Pages + GitHub Codespaces-ready web app example for displaying classic iOS application information, including app names, bundle identifiers, versions, and minimum iOS requirements.
+
+## Features
+
+- 📱 iOS app archive home screen
+- 🍎 Apple device themed interface
+- 🔎 App metadata browsing
+- 📦 Bundle ID and version display
+- 🌐 GitHub Pages deployment ready
+- ☁️ GitHub Codespaces compatible
+
+## Local preview
+
+From the workspace root, run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000 in your browser.
+
+## GitHub Pages deployment
+
+1. Push this repository to GitHub.
+2. Open the repository Settings.
+3. Go to Pages.
+4. Choose "GitHub Actions" as the source.
+5. The workflow in `.github/workflows/pages.yml` will publish the site automatically.
+
+## GitHub Codespaces
+
+This app is designed to work in a Codespace without any build tooling. The included devcontainer runs a simple static web server on port 8000 automatically.
+
+## Project structure
+
+```text
+.
+├── .devcontainer/
+│   └── devcontainer.json
+├── .github/
+│   └── workflows/
+│       └── pages.yml
+├── .nojekyll
+├── index.html
+├── script.js
+├── styles.css
+├── README.md
+└── LICENSE
+```
+
+## App archive data
+
+The app list includes entries such as:
+
+- Animal Sounds — `com.smartbabyapps.animalsounds`
+- SoundTouch — `com.yourcompany.SoundTouch`
+- Tozzle — `com.nodeflexion.Tozzle`
+- AutismXpress — `X7WS995LSR.com.StudioEmotion.AutismXpress`
+- Lunchbox — `com.thup.MonkeyPreschool`
+- Peek-a-Zoo — `com.duckduckmoosedesign.peekazoo`
+- Angry Birds — `com.rovio.AngryBirdsHalloween`
+- Artsee — `com.britejar.artsee`
+- ArtikPix — `com.rinnapps.artikpix.iap`
 
 ## Contact
 
 Email: skydu4@icloud.com
-
----
-
-# iPhone 1st Generation (iPhone 2G)
-
-## Restore iPhone OS 3.0
-
-1. Install the latest version of Apple Devices from the Microsoft Store.
-2. Connect your iPhone 2G to your PC using USB.
-3. Open Apple Devices and select your iPhone 2G.
-4. Hold the **Shift** key and click **Restore**.
-5. Select: iPhone1,1_3.0_7A341_Restore.ipsw file that you downloaded.
-
-6. Wait for the restore process to complete.
-7. The iPhone 2G will reboot into iPhone OS 3.0.
-
----
-
-# iOS App Archive
-
-## App Information (Home Screen)
-
-### Animal Sounds
-- **Bundle ID:** `com.smartbabyapps.animalsounds`
-- **Version:** `2.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1
-
-### SoundTouch
-- **Bundle ID:** `com.yourcompany.SoundTouch`
-- **Version:** `1.4`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Tozzle
-- **Bundle ID:** `com.nodeflexion.Tozzle`
-- **Version:** `3.7`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1.3
-
-### AutismXpress
-- **Bundle ID:** `X7WS995LSR.com.StudioEmotion.AutismXpress`
-- **Version:** `1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1.2
-
-### Lunchbox
-- **Bundle ID:** `com.thup.MonkeyPreschool`
-- **Version:** `1.4`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Peek-a-Zoo
-- **Bundle ID:** `com.duckduckmoosedesign.peekazoo`
-- **Version:** `1.1.1`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Michigan Nature Sounds
-- **Bundle ID:** `com.yourcompany.MichiganNatureSounds`
-- **Version:** `1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Peek-a-Zoo
-- **Bundle ID:** `com.tbd.pazCLL`
-- **Version:** `1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Artsee
-- **Bundle ID:** `com.britejar.artsee`
-- **Version:** `1.1`
-- **Platform:** iOS
-- **Minimum OS:** iOS 2.2
-
-### Angry Birds
-- **Bundle ID:** `com.rovio.AngryBirdsHalloween`
-- **Version:** `1.5.3`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Farm Flip Fun
-- **Bundle ID:** `lv.yapp.farmflipfun`
-- **Version:** `1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Farm Story
-- **Bundle ID:** `com.teamlava.farmstory`
-- **Version:** `1.2`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.0
-
-### Stickers
-- **Bundle ID:** `com.nightanddaystudios.ericcarlestickers`
-- **Version:** `1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 5.0
-
-### Forest
-- **Bundle ID:** `com.nightanddaystudios.peekabooforest`
-- **Version:** `1.1.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1.3
-
-### Virtuoso
-- **Bundle ID:** `com.peterb.virtuosopianofree`
-- **Version:** `3.1.2`
-- **Platform:** iOS
-- **Minimum OS:** iOS 4.0
-
-### ABC Tracer
-- **Bundle ID:** `com.appzoo.ABCTracer`
-- **Version:** `1.8`
-- **Platform:** iOS
-- **Minimum OS:** iOS 2.2.1
-
-### Peek Wild
-- **Bundle ID:** `com.nightanddaystudios.peekaboowild`
-- **Version:** `2.0.1`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1.3
-
-### Peekaboo
-- **Bundle ID:** `com.nightanddaystudios.peekaboobarn`
-- **Version:** `2.0`
-- **Platform:** iOS
-- **Minimum OS:** iOS 2.2
-
-### Finding Sight
-- **Bundle ID:** `my.finding3`
-- **Version:** `2.1`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.2
-
-### ArtikPix
-- **Bundle ID:** `com.rinnapps.artikpix.iap`
-- **Version:** `1.2.4`
-- **Platform:** iOS
-- **Minimum OS:** iOS 3.1
