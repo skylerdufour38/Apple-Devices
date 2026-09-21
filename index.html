@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apple Devices Archive — classic iOS app metadata browser for historic application information."
+    />
+    <title>Apple Devices Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark"></div>
+          <div>
+            <p class="eyebrow">Archive</p>
+            <h1>Apple Devices</h1>
+          </div>
+        </div>
+        <div class="status-pill">iOS app catalog</div>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="section-tag">Classic iOS</p>
+            <h2>Historic app metadata</h2>
+            <p>
+              Browse bundle identifiers, versions, and minimum OS requirements for a curated archive of early iPhone and iOS application listings.
+            </p>
+          </div>
+
+          <div class="search-panel">
+            <label for="searchInput" class="sr-only">Search apps</label>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search apps, bundle IDs..."
+              aria-label="Search apps"
+            />
+          </div>
+        </section>
+
+        <section class="stats" aria-label="Archive statistics">
+          <div class="stat-card">
+            <span class="stat-label">Apps</span>
+            <strong id="appCount">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Platform</span>
+            <strong>iOS</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Oldest minimum</span>
+            <strong id="oldestMinOS">iOS 2.2</strong>
+          </div>
+        </section>
+
+        <section class="archive-panel">
+          <div class="panel-header">
+            <h3>App Information</h3>
+            <span id="resultsMeta">0 results</span>
+          </div>
+          <div id="appGrid" class="app-grid" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
